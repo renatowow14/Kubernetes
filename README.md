@@ -13,7 +13,7 @@ Here is the high level workflow.
 The setup is updated with 1.31 cluster version.
 
 ## Prerequisites
-
+0. Have kubectl installed on your machine
 1. Run script init.sh to install Vagrant and Virtualbox 7.0 Version
 2. Working Vagrant setup
 3. 8 Gig + RAM workstation as the Vms use 3 vCPUS and 4+ GB RAM
