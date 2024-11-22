@@ -20,6 +20,8 @@ The setup is updated with 1.31 cluster version.
 sudo mkdir -p /etc/vbox
 echo "* 10.0.0.0/8" | sudo tee -a /etc/vbox/networks.conf
 echo "* 192.168.56.0/21" | sudo tee -a /etc/vbox/networks.conf
+sudo systemctl restart vboxdrv
+cd Kubernetes && vagrant up
 ```
 4. Working Vagrant setup
 5. 8 Gig + RAM workstation as the Vms use 3 vCPUS and 4+ GB RAM
