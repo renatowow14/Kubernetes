@@ -15,8 +15,12 @@ The setup is updated with 1.31 cluster version.
 ## Prerequisites
 0. Have kubectl installed on your machine
 1. Run script init.sh to install Vagrant and Virtualbox 7.0 Version
-2. Working Vagrant setup
-3. 8 Gig + RAM workstation as the Vms use 3 vCPUS and 4+ GB RAM
+2. Install vagrant-vbguest plugin ```vagrant plugin install vagrant-vbguest```
+3. Configure Network Vagrant ```cat > /etc/vbox/networks.conf
+* 10.0.0.0/8
+* 192.168.56.0/21```
+4. Working Vagrant setup
+5. 8 Gig + RAM workstation as the Vms use 3 vCPUS and 4+ GB RAM
 
 So that the host only networks can be in any range, not just 192.168.56.0/21 as described here:
 https://discuss.hashicorp.com/t/vagrant-2-2-18-osx-11-6-cannot-create-private-network/30984/23
