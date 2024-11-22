@@ -16,7 +16,7 @@ The setup is updated with 1.31 cluster version.
 0. Have kubectl installed on your machine
 1. Run script init.sh to install Vagrant and Virtualbox 7.0 Version
 2. Install vagrant-vbguest plugin ```vagrant plugin install vagrant-vbguest```
-3. Configure Network Vagrant ```cat > /etc/vbox/networks.conf
+```3. Configure Network Vagrant cat > /etc/vbox/networks.conf
 sudo mkdir -p /etc/vbox
 echo "* 10.0.0.0/8" | sudo tee -a /etc/vbox/networks.conf
 echo "* 192.168.56.0/21" | sudo tee -a /etc/vbox/networks.conf
