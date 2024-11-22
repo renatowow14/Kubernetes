@@ -17,8 +17,10 @@ The setup is updated with 1.31 cluster version.
 1. Run script init.sh to install Vagrant and Virtualbox 7.0 Version
 2. Install vagrant-vbguest plugin ```vagrant plugin install vagrant-vbguest```
 3. Configure Network Vagrant ```cat > /etc/vbox/networks.conf
-* 10.0.0.0/8
-* 192.168.56.0/21```
+sudo mkdir -p /etc/vbox
+echo "* 10.0.0.0/8" | sudo tee -a /etc/vbox/networks.conf
+echo "* 192.168.56.0/21" | sudo tee -a /etc/vbox/networks.conf
+```
 4. Working Vagrant setup
 5. 8 Gig + RAM workstation as the Vms use 3 vCPUS and 4+ GB RAM
 
